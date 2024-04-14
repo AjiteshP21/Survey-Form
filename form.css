@@ -1,0 +1,110 @@
+﻿body {
+    font-family: 'Poppins', 'Verdana';
+    background-color: #f0f0f0;
+    background-image: url('photos/workplace-with-blue-office-supplies.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+    input[type="text"]:hover,
+    input[type="email"]:hover,
+    input[type="number"]:hover,
+    select:hover,
+    textarea:hover {
+        border-color: #999; /* Change border color on hover */
+    }
+
+button {
+    position: relative;
+    background-color: rgb(230, 34, 77);
+    border-radius: 5px;
+    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 145px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+}
+
+    button::before {
+        content: "";
+        background-color: rgb(248, 50, 93);
+        width: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: width 700ms ease-in-out;
+        display: inline-block;
+    }
+
+    button:hover::before {
+        width: 100%;
+    }
+
+
+/* Display radio buttons inline */
+fieldset.inline {
+    display: inline-block;
+}
+
+    /* Adjust label for inline radio buttons */
+    fieldset.inline label {
+        display: inline;
+        margin-right: 10px;
+    }
+
+/* Display checkboxes inline */
+fieldset.checkbox {
+    display: inline-block;
+}
+
+    /* Adjust label for inline checkboxes */
+    fieldset.checkbox label {
+        display: inline;
+        margin-right: 10px;
+    }
+
